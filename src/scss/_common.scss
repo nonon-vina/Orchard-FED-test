@@ -5,8 +5,8 @@ html {
   font-size: 62.5%; // 1rem = 10px
   overflow-x: hidden;
 
-  @include u-mqMax(1200px) {
-    font-size: calc(10vw / 12);
+  @include u-mqMax(1250px) {
+    font-size: calc(10vw / 12.5);
   }
 
   // SP

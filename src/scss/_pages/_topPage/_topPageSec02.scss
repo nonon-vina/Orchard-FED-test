@@ -1,0 +1,116 @@
+.sec02 {
+  padding: 18rem 0;
+
+  @include u-mqMax {
+    padding: 8rem 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.inner__container {}
+
+.title {
+  font-size: 4.5rem;
+  color: $textWhite;
+  margin-bottom: 7rem;
+  text-align: center;
+  font-family: 'OpenSans-Light';
+  text-transform: uppercase;
+
+  @include u-mqMax {
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.cards  {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  &.cards--flex {
+    @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: stretch);
+
+    @include u-mqMax {
+      display: block;
+    }
+  }
+}
+
+.cards__item {
+  width: 32.08%;
+
+  @include u-mqMax {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+.cards__itemHead {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 5px solid $redPink;
+
+    @include u-mqMax {
+      border-bottom: 3px solid $redPink;
+    }
+  }
+}
+
+.cards__itemBody {
+  margin-top: 3rem;
+
+  @include u-mqMax {
+    margin-top: 2rem;
+  }
+}
+
+.cards__itemTtl {
+  font-size: 1.8rem;
+  color: $textWhite;
+
+  @include u-mqMax {
+    font-size: 1.6rem;
+  }
+}
+
+.cards__itemText {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: rgba($color: $textWhite, $alpha: .5);
+  font-family: 'OpenSans-Light';
+
+  @include u-mqMax {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}
+
+.cards__itemLink {
+  color: $white;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  padding-bottom: 1.5rem;
+  line-height: 1;
+  border-bottom: 1px solid $redPink;
+
+  @include u-mqMax {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+}

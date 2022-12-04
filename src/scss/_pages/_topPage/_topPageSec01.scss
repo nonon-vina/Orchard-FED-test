@@ -1,0 +1,107 @@
+/*====================================================================
+topPageSec01
+====================================================================*/
+
+.sec01 {
+  padding: 18rem 0 6rem;
+
+  @include u-mqMax {
+    padding: 10rem 0 4rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.inner__container {
+  width: 100%;
+  max-width: 124rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.row {
+  &.row--flex {
+    @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: stretch);
+
+    @include u-mqMax {
+      display: block;
+    }
+  }
+}
+
+.row__item {
+  width: 32.08%;
+
+  @include u-mqMax {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.row__itemKv {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.row__itemContent {
+  color: $textWhite;
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+
+    @include u-mqMax {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.row__itemLabel {
+  font-weight: normal;
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid $white;
+
+  @include u-mqMax {
+    font-size: 2.2rem;
+  }
+}
+
+.row__itemText {
+  line-height: 1.7;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  font-family: 'OpenSans-Light';
+
+  @include u-mqMax {
+    font-size: 1.6rem;
+  }
+
+  &.text--bold {
+    margin-top: 2rem;
+    font-family: 'OpenSans-SemiBold';
+
+    @include u-mqMax {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.row__itemContent {}
+
+.row__itemLabelSm {
+  color: $redPink;
+  font-size: 1.8rem;
+
+  @include u-mqMax {
+    font-size: 1.6rem;
+  }
+}
