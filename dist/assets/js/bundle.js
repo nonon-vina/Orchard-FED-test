@@ -1,10 +1,10 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "captureLinks": function() { return /* binding */ captureLinks; }
@@ -18,9 +18,43 @@ var captureLinks = function captureLinks() {
 
 /***/ }),
 /* 2 */
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "fadeInUp": function() { return /* binding */ fadeInUp; }
+/* harmony export */ });
+var fadeInUp = function fadeInUp() {
+  gsap.defaults({
+    easeEach: "power3.out"
+  });
+  gsap.set(".fadeInUp", {
+    y: 50
+  });
+  if (window.innerWidth > 768) {
+    ScrollTrigger.batch(".fadeInUp", {
+      interval: 0.7,
+      onEnter: function onEnter(batch) {
+        return gsap.to(batch, {
+          opacity: 1,
+          y: 0,
+          stagger: 0.23
+        });
+      }
+    });
+  } else {
+    ScrollTrigger.batch(".fadeInUp", {
+      interval: 0.5,
+      onEnter: function onEnter(batch) {
+        return gsap.to(batch, {
+          opacity: 1,
+          y: 0,
+          stagger: 0.2
+        });
+      }
+    });
+  }
+};
 
 /***/ })
 /******/ 	]);
@@ -50,18 +84,6 @@ var captureLinks = function captureLinks() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -92,13 +114,11 @@ var captureLinks = function captureLinks() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_captureLinks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _modules_fadeInUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _modules_fadeInUp__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_fadeInUp__WEBPACK_IMPORTED_MODULE_1__);
 
 
 $(function () {
