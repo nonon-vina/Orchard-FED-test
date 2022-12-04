@@ -24,6 +24,7 @@
     
     <!-- Styles-->
     <link rel="stylesheet" media="print,screen" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" media="print,screen" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" media="print,screen" href="./assets/css/style.css">
   </head>
   <body class="topPage">
@@ -34,14 +35,9 @@
       <section class="sec01">
         <div class="inner__container">
           <div class="row row--flex">
-            <div class="row__item">
-              <figure class="row__itemKv"><img src="./assets/images/topPage/topKv_01.jpg" alt="image"></figure>
-            </div>
-            <div class="row__item">
-              <figure class="row__itemKv"><img src="./assets/images/topPage/topKv_02.jpg" alt="image"></figure>
-              <figure class="row__itemKv"><img src="./assets/images/topPage/topKv_03.jpg" alt="image"></figure>
-            </div>
-            <div class="row__item">
+            <div class="row__item fadeInUp"><a class="row__itemKv" data-fancybox="gallery" href="./assets/images/topPage/topKv_01.jpg"><img src="./assets/images/topPage/topKv_01.jpg" alt="image"></a></div>
+            <div class="row__item fadeInUp"><a class="row__itemKv" data-fancybox="gallery" href="./assets/images/topPage/topKv_02.jpg"><img src="./assets/images/topPage/topKv_02.jpg" alt="image"></a><a class="row__itemKv" data-fancybox="gallery" href="./assets/images/topPage/topKv_03.jpg"><img src="./assets/images/topPage/topKv_03.jpg" alt="image"></a></div>
+            <div class="row__item fadeInUp">
               <div class="row__itemContent">
                 <h3 class="row__itemLabel">Answer your body's needs</h3>
                 <div class="row__itemText">The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that artificial favourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs.</div>
@@ -56,27 +52,24 @@
       </section>
       <section class="sec02">
         <div class="inner__container">
-          <h2 class="title">All the latest from AEG</h2>
+          <h2 class="title fadeInUp">All the latest from AEG</h2>
           <div class="cards cards--flex">
-            <div class="cards__item">
-              <figure class="cards__itemHead"><img src="./assets/images/topPage/topKv_04.jpg" alt=""></figure>
+            <div class="cards__item fadeInUp"><a class="cards__itemHead" data-fancybox href="./assets/images/topPage/topKv_04.jpg"><img src="./assets/images/topPage/topKv_04.jpg" alt=""></a>
               <div class="cards__itemBody">
                 <h3 class="cards__itemTtl">Summer Lunch Menu By Mark Best</h3>
-                <p class="cards__itemText">AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p><a class="cards__itemLink" href="">READ MORE</a>
+                <p class="cards__itemText">AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p><a class="js-links cards__itemLink" href="">READ MORE</a>
               </div>
             </div>
-            <div class="cards__item">
-              <figure class="cards__itemHead"><img src="./assets/images/topPage/topKv_05.jpg" alt=""></figure>
+            <div class="cards__item fadeInUp"><a class="cards__itemHead" data-fancybox href="./assets/images/topPage/topKv_05.jpg"><img src="./assets/images/topPage/topKv_05.jpg" alt=""></a>
               <div class="cards__itemBody">
                 <h3 class="cards__itemTtl">A Traditional Christmas Eve, Mark Best Style</h3>
-                <p class="cards__itemText">One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.</p><a class="cards__itemLink" href="">READ MORE</a>
+                <p class="cards__itemText">One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.</p><a class="js-links cards__itemLink" href="">READ MORE</a>
               </div>
             </div>
-            <div class="cards__item">
-              <figure class="cards__itemHead"><img src="./assets/images/topPage/topKv_06.jpg" alt=""></figure>
+            <div class="cards__item fadeInUp"><a class="cards__itemHead" data-fancybox href="./assets/images/topPage/topKv_06.jpg"><img src="./assets/images/topPage/topKv_06.jpg" alt=""></a>
               <div class="cards__itemBody">
                 <h3 class="cards__itemTtl">Taking Taste Further</h3>
-                <p class="cards__itemText">This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most out of our products - and the best out of your food.</p><a class="cards__itemLink" href="">READ MORE</a>
+                <p class="cards__itemText">This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most out of our products - and the best out of your food.</p><a class="js-links cards__itemLink" href="">READ MORE</a>
               </div>
             </div>
           </div>
@@ -91,6 +84,10 @@
     <!-- Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js">// lates</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="./assets/js/bundle.js"></script>
   </body>
 </html>

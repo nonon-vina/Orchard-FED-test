@@ -53,6 +53,7 @@
 }
 
 .cards__itemHead {
+  display: block;
   position: relative;
 
   &::after {
@@ -107,6 +108,11 @@
   padding-bottom: 1.5rem;
   line-height: 1;
   border-bottom: 1px solid $redPink;
+
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
 
   @include u-mqMax {
     margin-top: 2rem;

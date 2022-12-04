@@ -901,6 +901,7 @@ topPageSec01
 
 .row__itemKv {
   width: 100%;
+  display: block;
 }
 
 .row__itemKv:not(:last-child) {
@@ -1054,6 +1055,7 @@ topPageSec01
 }
 
 .cards__itemHead {
+  display: block;
   position: relative;
 }
 
@@ -1116,6 +1118,11 @@ topPageSec01
   padding-bottom: 1.5rem;
   line-height: 1;
   border-bottom: 1px solid #CC1530;
+}
+
+.cards__itemLink:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
