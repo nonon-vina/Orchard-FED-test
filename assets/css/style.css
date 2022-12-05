@@ -1122,6 +1122,7 @@ topPageSec01
   display: inline-block;
   padding-bottom: 1.5rem;
   line-height: 1;
+  text-transform: uppercase;
   border-bottom: 1px solid #CC1530;
 }
 
