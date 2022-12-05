@@ -101,6 +101,7 @@ topPageSec01
 .row__itemLabelSm {
   color: $redPink;
   font-size: 1.8rem;
+  text-transform: uppercase;
 
   @include u-mqMax {
     font-size: 1.6rem;

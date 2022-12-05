@@ -967,6 +967,7 @@ topPageSec01
 .row__itemLabelSm {
   color: #CC1530;
   font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
